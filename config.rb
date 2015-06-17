@@ -15,9 +15,14 @@ configure :build do
   activate :asset_hash
   activate :gzip, exts: %w{ .html .css .js .svg}
 
+   # set options on blog
+  activate :blog do |blog|
+ 
+
   # Use relative URLs
   # activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
